@@ -24,7 +24,6 @@ class MainWindow(QMainWindow):
         self.scr_width = scr_size.width()
         self.scr_height = scr_size.height()
         self.setGeometry(0, 0, self.scr_width, self.scr_height)
-        self.resize(767, 711)
         self.setMaximumSize(QSize(1920, 1080))
 
         # Setting main window layout
