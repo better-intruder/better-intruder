@@ -6,7 +6,7 @@ import sys
 
 
 class MainWindow(QMainWindow):
-    def __init__(self, scr_size):
+    def __init__(self, screen_size):
         super().__init__()
         # Setting names
         self.setWindowTitle("Requester")
@@ -21,9 +21,9 @@ class MainWindow(QMainWindow):
         self.setFont(self.font)
 
         # Setting size
-        self.scr_width = scr_size.width()
-        self.scr_height = scr_size.height()
-        self.setGeometry(0, 0, self.scr_width, self.scr_height)
+        self.screen_width = screen_size.width()
+        self.screen_height = screen_size.height()
+        self.setGeometry(0, 0, self.screen_width, self.screen_height)
         self.setMaximumSize(QSize(1920, 1080))
 
         # Setting main window layout
